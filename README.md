@@ -12,4 +12,9 @@ java -XX:+PrintCommandLineFlags -version
 # 查看 GC 详细信息
 java -XX:+PrintGCDetails -version
 ```
-
+### Gc 工具
+```text
+[Gc 日志分析 GCViewer](https://github.com/chewiebug/GCViewer)
+Jvisualvm
+jmc
+```

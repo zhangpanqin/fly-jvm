@@ -18,6 +18,9 @@ public class Client {
     @Test
     public void run1() {
         System.out.println(Student.STATIC_FINAL);
+        while (true){
+            System.out.println(1);
+        }
     }
 
     /**
