@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 public class Client {
 
     /**
-     * 访问 final 域不会触发类的加载
-     *
+     * 访问 final 域不会触发类的加载，编译器就已处理
+     * <p>
      * Student 和 People 类都没有加载
      */
 
@@ -26,5 +26,11 @@ public class Client {
     @Test
     public void run2() {
         System.out.println(Student.STATIC);
+    }
+
+    public static void main(String[] args) {
+        final Student student = new Student();
+        final Student student2 = new Student();
+        while (true){}
     }
 }
